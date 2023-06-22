@@ -1,0 +1,13 @@
+<p>hello-world works!</p>
+<h1>{{ "hello-world using custom pipe" | uppercasepipe }}</h1>
+<h1>{{car.name|uppercase}}</h1>
+<h1>{{bus.name|lowercase}}</h1>
+<button (click)=printtable()>3s table</button>
+<ul>
+ <li *ngFor="let num of tables">{{num}}</li> 
+</ul>
+<input type="number" #idInput>
+<button (click)="handleButtonClick(idInput.value)">Submit</button>
+<ul>
+    <li *ngFor="let num of customtables">{{num}}</li> 
+</ul>
